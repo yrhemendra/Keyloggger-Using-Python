@@ -1,4 +1,3 @@
-Report on Building a Python Keylogger
 AIM
 To demonstrate how to build a basic keylogger in Python for educational and cybersecurity
 awareness purposes.
@@ -21,7 +20,6 @@ The objectives are:
 • To implement reporting using timers.
 • To highlight ethical and legal considerations when studying keyloggers.
 1
-
 METHODOLOGY
 The methodology used is explained step-by-step as follows:
 1. Prerequisites and Setup
@@ -43,19 +41,3 @@ Two methods of reporting are implemented:
 A timer repeatedly calls the report() method at fixed time intervals to send or save logs.
 7. Running the Keylogger
 The final script initializes the keylogger and starts continuous keystroke monitoring.
-2
-
-RESULT
-The final output is a fully functional Python keylogger capable of:
-• Recording all keystrokes typed on the keyboard.
-• Converting special keys into readable formats.
-• Saving keystroke logs to a file or emailing them.
-• Periodically reporting logs using timers.
-The keylogger successfully demonstrates keystroke capturing, logging, and reporting mecha-
-nisms.
-CONCLUSION
-We got a clear and educational walkthrough of how to build a basic Python keylogger. It in-
-creases understanding of keylogging techniques, cybersecurity risks, and ethical considerations.
-While the project is useful for learning, such tools must only be used legally and responsibly.
-3
-<img width="474" height="670" alt="image" src="https://github.com/user-attachments/assets/eb353d82-fa32-4fdf-96c0-e15e1d6d8b5a" />
