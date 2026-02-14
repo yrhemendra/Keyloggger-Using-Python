@@ -1,15 +1,3 @@
----
-
-```markdown
-# 🛡️ Keylogger using Python (Educational Project)
-
-A **Python-based keylogger** developed for **educational and cybersecurity awareness purposes**.  
-This project demonstrates how keystroke logging works internally, including key capture, formatting, and periodic reporting.
-
-> ⚠️ **Important:** This project is strictly for **learning, research, and ethical cybersecurity awareness**.  
-> Do **NOT** use this software on systems you do not own or without explicit permission.
-
----
 
 ## 📌 Features
 
