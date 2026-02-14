@@ -1,43 +1,176 @@
-AIM
-To demonstrate how to build a basic keylogger in Python for educational and cybersecurity
-awareness purposes.
-INTRODUCTION
-A keylogger is a monitoring tool that records every keystroke typed on a keyboard. There
-are both legitimate uses—such as productivity analysis, parental control, and research—and
-malicious uses by cybercriminals to steal sensitive information. We will know how keyloggers
-function internally, thereby improving cybersecurity knowledge and awareness.
-PROBLEM STATEMENT
-Keyloggers are commonly used by attackers to steal information without a user’s knowledge.
-Most learners and users do not understand how such tools operate, leaving them vulnerable to
-attacks. Therefore, the problem addressed is:
-How can a simple Python keylogger be built to understand its working mechanism, keystroke
-capturing, periodic reporting, and security implications?
-OBJECTIVE
-The objectives are:
-• To demonstrate how to build a simple Python keylogger.
-• To explain keystroke capturing and logging.
-• To show how logs can be saved or emailed.
-• To implement reporting using timers.
-• To highlight ethical and legal considerations when studying keyloggers.
-1
-METHODOLOGY
-The methodology used is explained step-by-step as follows:
-1. Prerequisites and Setup
-Python installation, virtual environment setup, and installation of the keyboard module.
-2. Importing Required Libraries
-Modules such as keyboard, smtplib, threading.Timer, datetime, and email-handling
-modules are imported.
-3. Building the Keylogger Class
-A Keylogger class is created to store logs, track time stamps, define the reporting interval,
-and choose the reporting method (file or email).
-4. Keystroke Capturing
-A callback function records each key released. Special keys such as space, enter, or shift are
-formatted into readable symbols.
-5. Reporting Mechanism
-Two methods of reporting are implemented:
-• File Reporting: Saved as a text file.
-• Email Reporting: Sent via SMTP after constructing an email message.
-6. Scheduling Reports
-A timer repeatedly calls the report() method at fixed time intervals to send or save logs.
-7. Running the Keylogger
-The final script initializes the keylogger and starts continuous keystroke monitoring.
+---
+
+```markdown
+# 🛡️ Keylogger using Python (Educational Project)
+
+A **Python-based keylogger** developed for **educational and cybersecurity awareness purposes**.  
+This project demonstrates how keystroke logging works internally, including key capture, formatting, and periodic reporting.
+
+> ⚠️ **Important:** This project is strictly for **learning, research, and ethical cybersecurity awareness**.  
+> Do **NOT** use this software on systems you do not own or without explicit permission.
+
+---
+
+## 📌 Features
+
+- ⌨️ Captures all keyboard keystrokes in real time  
+- 🔤 Converts special keys (Enter, Space, Shift, etc.) into readable format  
+- 🕒 Periodic reporting using timers  
+- 📁 Log storage in text files  
+- 📧 Optional email-based reporting via SMTP  
+- 🧩 Modular and well-structured Python code  
+
+---
+
+## 🧠 Project Objective
+
+The goal of this project is to:
+- Understand how keyloggers operate internally  
+- Learn about keystroke capturing mechanisms in Python  
+- Study security risks associated with keylogging malware  
+- Improve cybersecurity awareness and defensive knowledge  
+
+---
+
+## 🛠️ Tools & Technologies
+
+- **Python 3**
+- `keyboard` module
+- `threading.Timer`
+- `datetime`
+- `smtplib`
+- `email.mime`
+
+---
+
+## 📂 Project Structure
+
+```
+
+Keylogger-Using-Python/
+│
+├── keylogger.py          # Main keylogger script
+├── logs/                 # Directory for stored keystroke logs
+├── README.md             # Project documentation
+└── requirements.txt      # Required Python modules
+
+````
+
+---
+
+## ⚙️ Installation & Setup
+
+### 1️⃣ Clone the Repository
+```bash
+git clone https://github.com/your-username/Keylogger-Using-Python.git
+cd Keylogger-Using-Python
+````
+
+### 2️⃣ Install Dependencies
+
+```bash
+pip install keyboard
+```
+
+> ⚠️ Run the script with **administrator/root privileges**, as the `keyboard` module requires it.
+
+---
+
+## ▶️ Usage
+
+Edit the configuration inside `keylogger.py`:
+
+```python
+SEND_REPORT_EVERY = 60        # Report interval in seconds
+REPORT_METHOD = "file"       # "file" or "email"
+```
+
+Run the program:
+
+```bash
+python keylogger.py
+```
+
+The keylogger will:
+
+* Start capturing keystrokes
+* Store or email logs at fixed intervals
+* Continue running until manually stopped
+
+---
+
+## 📊 Output
+
+* **File Mode:**
+  Keystrokes are saved in timestamped `.txt` files
+
+* **Email Mode:**
+  Keystrokes are sent via SMTP email at regular intervals
+
+---
+
+## 🔐 Ethical & Legal Considerations
+
+✔ Allowed:
+
+* Personal system monitoring
+* Cybersecurity research
+* Academic demonstrations
+* Learning malware behavior defensively
+
+❌ Not allowed:
+
+* Monitoring others without consent
+* Stealing credentials
+* Malicious surveillance
+
+> Misuse of this software may be illegal and unethical.
+> The author is **not responsible** for any misuse.
+
+---
+
+## 🚀 Future Enhancements
+
+* Window/application-based logging
+* Encrypted log storage
+* Detection and prevention mechanisms
+* GUI dashboard for monitoring
+* IDS/IPS integration for defensive analysis
+
+---
+
+## 📚 Learning Outcomes
+
+* Deep understanding of keylogging techniques
+* Hands-on experience with Python system-level programming
+* Awareness of malware detection challenges
+* Ethical hacking and defensive security concepts
+
+---
+
+## 📜 License
+
+This project is released for **educational purposes only**.
+Use responsibly and ethically.
+
+---
+
+## 🤝 Contributions
+
+Contributions are welcome!
+Feel free to fork this repository and submit a pull request.
+
+---
+
+## ⭐ Acknowledgment
+
+This project was developed as part of **cybersecurity learning and academic coursework** to understand real-world attack mechanisms and improve defensive strategies.
+
+---
+
+### 🔖 Keywords
+
+`Python Keylogger` `Cybersecurity` `Ethical Hacking` `Malware Analysis` `Keystroke Logging`
+
+```
+
